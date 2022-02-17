@@ -1,0 +1,112 @@
+html {
+	background-color: black;
+    font-family: Roboto Slab, serif;
+	color: white;
+}
+
+h1 {
+	font-size: 45px;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+p {
+	margin-left: 30px;
+	margin-top: 50px
+}
+
+.grid {
+	width: 600px;
+	height: 600px;
+	border: solid black 1px;
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px ;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 80%;
+}
+
+.grid div {
+	width: 40px;
+	height: 40px;
+}
+
+.junk {
+		background-image: url("images/washingmachine.png");
+}
+
+.rocket {
+	background-image: url("images/rocket.png");
+    width: 40px;
+    height: 40px;
+}
+
+.laser {
+	background-image: url("images/laser.png");
+}
+
+.boom {
+	background-image: url("images/boom.png"); 
+}
+
+#gameover{
+     position: absolute;
+     width : 600px;
+     height: 600px;
+     left: 440px;
+     display: none;
+}
+
+#youwon{
+    width: 600px;
+    top: 350;
+    left: 550px;
+    display: none;
+}
+
+ #youlose{
+    width:600px;
+    top: 350;
+    left: 500px;
+    display: none;
+}
+
+ #restart{
+     position: absolute;
+     top: 200px;
+     left : 250px;
+     cursor: pointer;
+     font-size: 20px;
+     color : #FFF;
+}
+
+svg{
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+
+#stars1{
+    animation: animation 7s alternate-reverse infinite linear;
+}
+
+#stars2{
+    animation: animation 10s alternate-reverse infinite linear;
+}
+
+@keyframes animation {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50px);
+    }
+}
